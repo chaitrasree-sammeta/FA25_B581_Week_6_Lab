@@ -24,6 +24,14 @@ first_name = name_field[1]         # First name: PID-5.2
 
 # Extract gender from PID-8
 gender = pid[8][0]
+dob  = pid[7]
+address = pid[11][0]
+street = address[0]
+city = address[2]
+state = address[3]
+zipcode = address[4]
+phone =pid[13]
+
 print(f"Name:{first_name} {last_name}")# Gender: PID-8
 print(f"Gender:{gender}")
 print(pid)
